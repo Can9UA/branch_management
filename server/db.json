@@ -2,6 +2,7 @@
   "branches": [
     {
       "id": 1,
+      "building": "http://lorempixel.com/output/city-q-c-640-480-5.jpg",
       "name": "Gorczany, Schneider and Jenkins",
       "address": "70 Toban Terrace",
       "map-address": "52.3",
@@ -13,6 +14,7 @@
     },
     {
       "id": 2,
+      "building": "http://lorempixel.com/output/city-q-c-640-480-4.jpg",
       "name": "Lebsack-Feest",
       "address": "1050 Fulton Point",
       "map-address": "30.64125",
@@ -24,6 +26,7 @@
     },
     {
       "id": 3,
+      "building": "http://lorempixel.com/output/city-q-c-640-480-6.jpg",
       "name": "Von-Hirthe",
       "address": "63 Manley Center",
       "map-address": "51.3246",
@@ -36,6 +39,7 @@
     {
       "id": 4,
       "name": "Romaguera-Reichel",
+      "building": "http://lorempixel.com/output/city-q-c-640-480-8.jpg",
       "address": "17909 Miller Trail",
       "map-address": "-21.01111",
       "description": "Poisoning by selective serotonin and norepinephrine reuptake inhibitors, undetermined, subsequent encounter",
@@ -47,6 +51,7 @@
     {
       "id": 5,
       "name": "Rempel-Balistreri",
+      "building": "http://lorempixel.com/output/city-q-c-640-480-7.jpg",
       "address": "48728 Weeping Birch Trail",
       "map-address": "35.2065",
       "description": "Fall on or from playground slide, sequela",

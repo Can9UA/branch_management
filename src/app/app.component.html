@@ -32,13 +32,28 @@
     </div>
   </aside>
   <section class="content">
-    <ol class="breadcrumb mb-md-0">
+    <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item"><a href="#">Library</a></li>
       <li class="breadcrumb-item active">Data</li>
     </ol>
-    <div class="container-fluid">
-      <i class="fa fa-check"></i>
+    <div class="container-fluid py-3">
+      <!-- branches -->
+      <div class="row">
+        <div *ngFor="let branch of branches" class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top img-fluid" [src]="branch.building" [alt]="branch.address">
+            <div class="card-block">
+              <h4 class="card-title">{{branch.name}}</h4>
+              <p class="card-text">{{branch.description}}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">{{branch.address}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- branches -->
     </div>
   </section>
 </main>
