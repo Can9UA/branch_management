@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Branch } from '../shared/branch.interface'; // TODO temporary
+import { Branch } from '../shared/branch.interface';
 
 @Component({
   selector: 'branch',

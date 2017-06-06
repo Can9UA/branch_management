@@ -8,26 +8,42 @@ import {
 } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Error } from 'tslint/lib/error';
+
 import { Branch } from '../shared/branch.interface';
+import { Employee } from '../shared/employee.interface';
 
 @Injectable()
 export class ServerDataService {
   private urls = {
     base: 'http://localhost:3000/',
-    branches: 'http://localhost:3000/branches',
-    employees: 'http://localhost:3000/employees'
+    branches: 'http://localhost:3000/branches/',
+    employees: 'http://localhost:3000/employees/'
   };
 
   branches: Branch[];
+  employee: Employee[];
 
   constructor(private http: Http) { }
 
-  getBranches(): Observable<Branch[]> {
-    return this.http.get(this.urls.branches)
+  getBranches(branchIndex: string | number = ''): Observable<Branch[]> {
+    const request = this.urls.branches + branchIndex;
+
+    return this.http.get(request)
+        .map(res => {
+          return res.json();
+        })
+        .map(branches => this.branches = branches)
+        .catch(this.handleError);
+  }
+
+  getEmployees(employeeIndex: string | number = ''): Observable<Employee[]> {
+    const request = this.urls.employees + employeeIndex;
+
+    return this.http.get(request)
       .map(res => {
         return res.json();
       })
-      .map(branches => this.branches = branches)
+      .map(employees => this.employee = employees)
       .catch(this.handleError);
   }
 

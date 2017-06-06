@@ -19,5 +19,16 @@ export class AppComponent implements OnInit { // TODO temporary: implements OnIn
       .subscribe(branches => {
         this.branches = branches;
       });
+
+    // get branches by id
+    // this.serverDataService.getBranches(2)
+    //   .subscribe(branches => {
+    //     console.log(branches);
+    //   });
+
+    this.serverDataService.getEmployees()
+      .subscribe(employees => {
+        console.log(employees);
+      });
   }
 }
