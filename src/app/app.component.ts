@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ServerDataService } from './services/server-data.service'; // TODO temporary
 
 import { Branch } from './shared/branch.interface'; // TODO temporary
+import { Employee } from './shared/employee.interface'; // TODO temporary
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { Branch } from './shared/branch.interface'; // TODO temporary
 })
 export class AppComponent implements OnInit { // TODO temporary: implements OnInit
   branches: Branch[];
+  employees: Employee[];
 
   constructor(private serverDataService: ServerDataService) {
   }
@@ -28,7 +30,7 @@ export class AppComponent implements OnInit { // TODO temporary: implements OnIn
 
     this.serverDataService.getEmployees()
       .subscribe(employees => {
-        console.log(employees);
+        this.employees = employees;
       });
   }
 }

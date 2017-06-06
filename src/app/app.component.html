@@ -40,11 +40,19 @@
     <div class="container-fluid py-3">
       <!-- branches -->
       <div class="row">
-        <div *ngFor="let branch of branches" class="col-md-6 col-lg-4 col-xl-3 mb-4">
+        <div *ngFor="let branch of branches; trackBy: index" class="col-md-6 col-lg-4 col-xl-3 mb-4">
           <branch [branch]="branch"></branch>
         </div>
       </div>
       <!-- branches -->
+
+      <!-- employees -->
+      <div class="row">
+        <div *ngFor="let employee of employees; trackBy: index" class="col-md-6 col-lg-4 mb-4">
+          <employee [employee]="employee"></employee>
+        </div>
+      </div>
+      <!-- employees -->
     </div>
   </section>
 </main>

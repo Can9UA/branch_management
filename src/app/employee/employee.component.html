@@ -1,0 +1,16 @@
+<div class="media">
+  <img class="d-flex mr-3 rounded-circle bg-info" [src]="employee.avatar" [alt]="employee.name">
+  <div class="media-body">
+    <h5 class="mt-0">{{employee.name}} {{employee.surname}}</h5>
+    <h6>{{employee.jobTitle}}</h6>
+    <p>
+      <strong>Phone:</strong> {{employee.phone}}
+    </p>
+    <p>
+      <strong>Hired:</strong> {{employee.hireDate}}
+    </p>
+    <p>
+      <strong>Salary:</strong> {{employee.salary}} {{employee.salaryCurrency}}
+    </p>
+  </div>
+</div>
