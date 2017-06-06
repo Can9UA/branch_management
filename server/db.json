@@ -1,0 +1,313 @@
+{
+  "branches": [
+    {
+      "id": 1,
+      "name": "Gorczany, Schneider and Jenkins",
+      "address": "70 Toban Terrace",
+      "map-address": "52.3",
+      "description": "Nondisplaced pilon fracture of unspecified tibia, subsequent encounter for closed fracture with routine healing",
+      "employees": [
+        {
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lebsack-Feest",
+      "address": "1050 Fulton Point",
+      "map-address": "30.64125",
+      "description": "Displaced fracture of head of right radius, subsequent encounter for open fracture type I or II with routine healing",
+      "employees": [
+        {
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Von-Hirthe",
+      "address": "63 Manley Center",
+      "map-address": "51.3246",
+      "description": "Nondisplaced trimalleolar fracture of left lower leg, subsequent encounter for closed fracture with delayed healing",
+      "employees": [
+        {
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Romaguera-Reichel",
+      "address": "17909 Miller Trail",
+      "map-address": "-21.01111",
+      "description": "Poisoning by selective serotonin and norepinephrine reuptake inhibitors, undetermined, subsequent encounter",
+      "employees": [
+        {
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Rempel-Balistreri",
+      "address": "48728 Weeping Birch Trail",
+      "map-address": "35.2065",
+      "description": "Fall on or from playground slide, sequela",
+      "employees": [
+        {
+        }
+      ]
+    }
+  ],
+
+  "employees": [
+    [{
+      "id": 1,
+      "avatar": "https://robohash.org/aperiamvoluptatembeatae.png?size=50x50&set=set1",
+      "name": "Betti",
+      "surname": "Crepel",
+      "job-title": "Staff Accountant I",
+      "phone": "46-(559)729-3180",
+      "hire-date": "1/11/2017",
+      "salary-currency": "SEK",
+      "salary": "990.90"
+    }, {
+      "id": 2,
+      "avatar": "https://robohash.org/doloresdignissimosalias.png?size=50x50&set=set1",
+      "name": "Moyna",
+      "surname": "Milier",
+      "job-title": "Human Resources Manager",
+      "phone": "86-(274)485-1791",
+      "hire-date": "12/12/2016",
+      "salary-currency": "CNY",
+      "salary": "910.56"
+    }, {
+      "id": 3,
+      "avatar": "https://robohash.org/adipiscinamearum.png?size=50x50&set=set1",
+      "name": "Torrey",
+      "surname": "Stuttard",
+      "job-title": "Technical Writer",
+      "phone": "503-(884)262-9466",
+      "hire-date": "4/18/2017",
+      "salary-currency": "USD",
+      "salary": "2989.87"
+    }, {
+      "id": 4,
+      "avatar": "https://robohash.org/quaeoptiorem.png?size=50x50&set=set1",
+      "name": "Davina",
+      "surname": "Reaveley",
+      "job-title": "Accountant I",
+      "phone": "81-(427)470-4363",
+      "hire-date": "9/28/2016",
+      "salary-currency": "JPY",
+      "salary": "2351.95"
+    }, {
+      "id": 5,
+      "avatar": "https://robohash.org/mollitiadelectusnon.png?size=50x50&set=set1",
+      "name": "Alexis",
+      "surname": "Elijahu",
+      "job-title": "Software Test Engineer I",
+      "phone": "420-(641)616-8998",
+      "hire-date": "10/20/2016",
+      "salary-currency": "CZK",
+      "salary": "2516.90"
+    }, {
+      "id": 6,
+      "avatar": "https://robohash.org/etquifugiat.png?size=50x50&set=set1",
+      "name": "Konstantine",
+      "surname": "Ingray",
+      "job-title": "Technical Writer",
+      "phone": "7-(548)566-4085",
+      "hire-date": "10/16/2016",
+      "salary-currency": "RUB",
+      "salary": "1055.18"
+    }, {
+      "id": 7,
+      "avatar": "https://robohash.org/voluptatecorporisexplicabo.png?size=50x50&set=set1",
+      "name": "Joanne",
+      "surname": "Kermode",
+      "job-title": "Senior Cost Accountant",
+      "phone": "7-(265)658-0912",
+      "hire-date": "3/16/2016",
+      "salary-currency": "RUB",
+      "salary": "1516.29"
+    }, {
+      "id": 8,
+      "avatar": "https://robohash.org/perspiciatiseasit.png?size=50x50&set=set1",
+      "name": "Bonita",
+      "surname": "McSperrin",
+      "job-title": "Senior Quality Engineer",
+      "phone": "86-(414)381-5299",
+      "hire-date": "4/24/2017",
+      "salary-currency": "CNY",
+      "salary": "2868.12"
+    }, {
+      "id": 9,
+      "avatar": "https://robohash.org/quicumsed.png?size=50x50&set=set1",
+      "name": "Georgi",
+      "surname": "Penas",
+      "job-title": "Geologist IV",
+      "phone": "46-(816)179-2490",
+      "hire-date": "5/20/2017",
+      "salary-currency": "SEK",
+      "salary": "709.93"
+    }, {
+      "id": 10,
+      "avatar": "https://robohash.org/doloresadnobis.png?size=50x50&set=set1",
+      "name": "Stephanie",
+      "surname": "Stowte",
+      "job-title": "Information Systems Manager",
+      "phone": "86-(741)382-4735",
+      "hire-date": "1/27/2016",
+      "salary-currency": "CNY",
+      "salary": "1034.78"
+    }, {
+      "id": 11,
+      "avatar": "https://robohash.org/eoseosdolore.png?size=50x50&set=set1",
+      "name": "Bert",
+      "surname": "Soreau",
+      "job-title": "Design Engineer",
+      "phone": "355-(719)375-7973",
+      "hire-date": "9/1/2016",
+      "salary-currency": "ALL",
+      "salary": "1641.97"
+    }, {
+      "id": 12,
+      "avatar": "https://robohash.org/utanimiconsectetur.png?size=50x50&set=set1",
+      "name": "Beth",
+      "surname": "Thomtson",
+      "job-title": "Assistant Manager",
+      "phone": "86-(107)608-7074",
+      "hire-date": "3/5/2016",
+      "salary-currency": "CNY",
+      "salary": "895.80"
+    }, {
+      "id": 13,
+      "avatar": "https://robohash.org/recusandaeconsequaturreiciendis.png?size=50x50&set=set1",
+      "name": "Bernete",
+      "surname": "Walsh",
+      "job-title": "Food Chemist",
+      "phone": "86-(754)312-3002",
+      "hire-date": "7/21/2016",
+      "salary-currency": "CNY",
+      "salary": "845.67"
+    }, {
+      "id": 14,
+      "avatar": "https://robohash.org/voluptatesconsequunturquasi.png?size=50x50&set=set1",
+      "name": "Drucy",
+      "surname": "Woolward",
+      "job-title": "Statistician IV",
+      "phone": "46-(160)750-2669",
+      "hire-date": "9/21/2016",
+      "salary-currency": "SEK",
+      "salary": "556.46"
+    }, {
+      "id": 15,
+      "avatar": "https://robohash.org/inullamsint.png?size=50x50&set=set1",
+      "name": "Callean",
+      "surname": "Vedishchev",
+      "job-title": "Paralegal",
+      "phone": "49-(482)951-3520",
+      "hire-date": "9/24/2016",
+      "salary-currency": "EUR",
+      "salary": "2449.36"
+    }, {
+      "id": 16,
+      "avatar": "https://robohash.org/delenitiquoassumenda.png?size=50x50&set=set1",
+      "name": "Neron",
+      "surname": "Dundridge",
+      "job-title": "Speech Pathologist",
+      "phone": "81-(948)523-3506",
+      "hire-date": "1/29/2017",
+      "salary-currency": "JPY",
+      "salary": "1567.40"
+    }, {
+      "id": 17,
+      "avatar": "https://robohash.org/itaquequidolorum.png?size=50x50&set=set1",
+      "name": "Susette",
+      "surname": "Lowing",
+      "job-title": "Associate Professor",
+      "phone": "86-(577)679-0312",
+      "hire-date": "2/11/2016",
+      "salary-currency": "CNY",
+      "salary": "2126.13"
+    }, {
+      "id": 18,
+      "avatar": "https://robohash.org/praesentiumquaedignissimos.png?size=50x50&set=set1",
+      "name": "Alford",
+      "surname": "Corringham",
+      "job-title": "Graphic Designer",
+      "phone": "86-(227)542-4391",
+      "hire-date": "7/15/2016",
+      "salary-currency": "CNY",
+      "salary": "1057.05"
+    }, {
+      "id": 19,
+      "avatar": "https://robohash.org/etsedearum.png?size=50x50&set=set1",
+      "name": "Frazer",
+      "surname": "Chantrell",
+      "job-title": "Structural Engineer",
+      "phone": "62-(302)728-8542",
+      "hire-date": "7/17/2016",
+      "salary-currency": "IDR",
+      "salary": "2863.50"
+    }, {
+      "id": 20,
+      "avatar": "https://robohash.org/delenitialiasvel.png?size=50x50&set=set1",
+      "name": "Gayel",
+      "surname": "Fish",
+      "job-title": "Speech Pathologist",
+      "phone": "30-(295)699-9529",
+      "hire-date": "8/20/2016",
+      "salary-currency": "EUR",
+      "salary": "2423.94"
+    }, {
+      "id": 21,
+      "avatar": "https://robohash.org/fugiatomnisaut.png?size=50x50&set=set1",
+      "name": "Dion",
+      "surname": "Lohoar",
+      "job-title": "Computer Systems Analyst III",
+      "phone": "62-(193)316-2305",
+      "hire-date": "4/15/2017",
+      "salary-currency": "IDR",
+      "salary": "2917.94"
+    }, {
+      "id": 22,
+      "avatar": "https://robohash.org/autplaceattenetur.png?size=50x50&set=set1",
+      "name": "Trev",
+      "surname": "Tilston",
+      "job-title": "Help Desk Technician",
+      "phone": "86-(799)374-8805",
+      "hire-date": "8/5/2016",
+      "salary-currency": "CNY",
+      "salary": "2802.10"
+    }, {
+      "id": 23,
+      "avatar": "https://robohash.org/nihilbeataenon.png?size=50x50&set=set1",
+      "name": "Berne",
+      "surname": "Rains",
+      "job-title": "Health Coach I",
+      "phone": "66-(664)701-3809",
+      "hire-date": "4/1/2016",
+      "salary-currency": "THB",
+      "salary": "795.47"
+    }, {
+      "id": 24,
+      "avatar": "https://robohash.org/nonrationelibero.png?size=50x50&set=set1",
+      "name": "Charmane",
+      "surname": "Edmondson",
+      "job-title": "Accountant IV",
+      "phone": "47-(734)281-6219",
+      "hire-date": "4/29/2017",
+      "salary-currency": "NOK",
+      "salary": "2155.53"
+    }, {
+      "id": 25,
+      "avatar": "https://robohash.org/enimaliquameveniet.png?size=50x50&set=set1",
+      "name": "Sashenka",
+      "surname": "Christiensen",
+      "job-title": "Payment Adjustment Coordinator",
+      "phone": "48-(780)176-8218",
+      "hire-date": "1/1/2016",
+      "salary-currency": "PLN",
+      "salary": "2173.95"
+    }]
+  ]
+}
