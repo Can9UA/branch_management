@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ServerDataService } from './services/server-data.service';
+import { BranchComponent } from './branch/branch.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BranchComponent
   ],
   imports: [
     BrowserModule,

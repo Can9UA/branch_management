@@ -41,16 +41,7 @@
       <!-- branches -->
       <div class="row">
         <div *ngFor="let branch of branches" class="col-md-6 col-lg-4 col-xl-3 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top img-fluid" [src]="branch.building" [alt]="branch.address">
-            <div class="card-block">
-              <h4 class="card-title">{{branch.name}}</h4>
-              <p class="card-text">{{branch.description}}</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">{{branch.address}}</small>
-            </div>
-          </div>
+          <branch [branch]="branch"></branch>
         </div>
       </div>
       <!-- branches -->
