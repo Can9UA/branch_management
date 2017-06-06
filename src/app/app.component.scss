@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+}
+.sidebar {
+  flex-basis: 200px;
+}
+.content {
+  flex-grow: 1;
+}
