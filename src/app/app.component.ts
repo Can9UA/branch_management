@@ -9,11 +9,9 @@ import { Branch } from './shared/branch.interface'; // TODO temporary
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit { // TODO temporary: implements OnInit
-  title = 'app works!';
   branches: Branch[];
 
   constructor(private serverDataService: ServerDataService) {
-
   }
 
   ngOnInit() {
@@ -22,7 +20,5 @@ export class AppComponent implements OnInit { // TODO temporary: implements OnIn
         this.branches = branches;
         console.log(this.branches);
       });
-
-
   }
 }
