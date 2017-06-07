@@ -2,12 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
+## Start project
+Run `npm start` it will start `ng serve` and `json-server --watch server/db.json`
+
 ## Development server
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Start JSON Server
-Install `npm run server`
 
 ## Code scaffolding
 
