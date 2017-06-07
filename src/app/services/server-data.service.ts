@@ -1,3 +1,4 @@
+import { environment } from 'environments/environment';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -14,11 +15,6 @@ import { Employee } from '../shared/employee.interface';
 
 @Injectable()
 export class ServerDataService {
-  private urls = {
-    base: 'http://localhost:3000/',
-    branches: 'http://localhost:3000/branches/',
-    employees: 'http://localhost:3000/employees/'
-  };
 
   branches: Branch[];
   employee: Employee[];
@@ -26,7 +22,7 @@ export class ServerDataService {
   constructor(private http: Http) { }
 
   getBranches(branchIndex: string | number = ''): Observable<Branch[]> {
-    const request = this.urls.branches + branchIndex;
+    const request = environment.branches + branchIndex;
 
     return this.http.get(request)
         .map(res => {
@@ -37,7 +33,7 @@ export class ServerDataService {
   }
 
   getEmployees(employeeIndex: string | number = ''): Observable<Employee[]> {
-    const request = this.urls.employees + employeeIndex;
+    const request = environment.employees + employeeIndex;
 
     return this.http.get(request)
       .map(res => {
