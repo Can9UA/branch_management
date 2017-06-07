@@ -11,6 +11,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { RouterModule } from '@angular/router';
 import { BranchesComponent } from './branches/branches.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,17 +21,27 @@ import { EmployeesComponent } from './employees/employees.component';
     EmployeeComponent,
     BranchComponent,
     BranchesComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    BreadcrumbComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      { path: 'branches', component: BranchesComponent },
-      { path: 'employees', component: EmployeesComponent },
-      { path: '', redirectTo: 'branches', pathMatch: 'full' }
-    ])
+    RouterModule.forRoot([{
+      path: 'branches',
+      component: BranchesComponent,
+      data: { breadcrumb: 'Branches' }
+    }, {
+      path: 'employees',
+      component: EmployeesComponent,
+      data: { breadcrumb: 'Employees' }
+    }, {
+      path: '',
+      component: HomeComponent,
+      data: { breadcrumb: 'Home' }
+    }])
   ],
   providers: [ServerDataService],
   bootstrap: [AppComponent]

@@ -27,16 +27,12 @@
 <main class="main">
   <aside class="sidebar">
     <div class="list-group">
-      <a routerLink="/branches" routerLinkActive="active" class="list-group-item">Branches</a>
+      <a routerLink="/branches" routerLinkActive="active" class="list-group-item list-group-item-action">Branches</a>
       <a routerLink="/employees" routerLinkActive="active" class="list-group-item list-group-item-action">Employees</a>
     </div>
   </aside>
   <section class="content">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Library</a></li>
-      <li class="breadcrumb-item active">Data</li>
-    </ol>
+    <breadcrumb></breadcrumb>
     <div class="container-fluid py-3">
       <router-outlet></router-outlet>
     </div>
