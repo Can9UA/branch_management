@@ -8,18 +8,31 @@ import { ServerDataService } from './services/server-data.service';
 import { BranchComponent } from './branch/branch.component';
 import { EmployeeComponent } from './employee/employee.component';
 
+import { RouterModule } from '@angular/router';
+import { BranchesComponent } from './branches/branches.component';
+import { EmployeesComponent } from './employees/employees.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     BranchComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    BranchComponent,
+    BranchesComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      { path: 'branches', component: BranchesComponent },
+      { path: 'employees', component: EmployeesComponent },
+      { path: '', redirectTo: 'branches', pathMatch: 'full' }
+    ])
   ],
   providers: [ServerDataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
