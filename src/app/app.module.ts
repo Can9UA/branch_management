@@ -8,11 +8,11 @@ import { ServerDataService } from './services/server-data.service';
 import { BranchComponent } from './branch/branch.component';
 import { EmployeeComponent } from './employee/employee.component';
 
-import { RouterModule } from '@angular/router';
 import { BranchesComponent } from './branches/branches.component';
 import { EmployeesComponent } from './employees/employees.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { HomeComponent } from './home/home.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { routing } from 'app/app.routing.module';
 
 @NgModule({
   declarations: [
@@ -29,19 +29,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([{
-      path: 'branches',
-      component: BranchesComponent,
-      data: { breadcrumb: 'Branches' }
-    }, {
-      path: 'employees',
-      component: EmployeesComponent,
-      data: { breadcrumb: 'Employees' }
-    }, {
-      path: '',
-      component: HomeComponent,
-      data: { breadcrumb: 'Home' }
-    }])
+    routing
   ],
   providers: [ServerDataService],
   bootstrap: [AppComponent]

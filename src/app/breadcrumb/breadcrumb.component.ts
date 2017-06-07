@@ -31,7 +31,6 @@ export class BreadcrumbComponent implements OnInit {
 
   parseRoute(node: ActivatedRouteSnapshot) {
     if (node.data['breadcrumb'] && node.url.length) {
-      console.log(node.data['breadcrumb'], node);
       let urlSegments: UrlSegment[] = [];
       node.pathFromRoot.forEach(routerState => {
         urlSegments = urlSegments.concat(routerState.url);
