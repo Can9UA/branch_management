@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import {
   Router,
-  ActivatedRouteSnapshot,
-  UrlSegment
+  ActivatedRoute,
+  NavigationEnd,
+  Params,
+  PRIMARY_OUTLET
 } from '@angular/router';
+import 'rxjs/add/operator/filter';
 
-interface Breadcrumb {
-  name: string;
+interface IBreadcrumb {
+  label: string;
+  params: Params;
   url: string;
 }
 
@@ -17,36 +21,61 @@ interface Breadcrumb {
 })
 export class BreadcrumbComponent implements OnInit {
 
-  breadcrumbs: Breadcrumb[];
+  public breadcrumbs: IBreadcrumb[];
 
-  constructor(private router: Router) {
+  constructor(private activatedRoute: ActivatedRoute,
+              private router: Router) {
+    this.breadcrumbs = [];
   }
 
   ngOnInit() {
-    this.router.events.subscribe(() => {
-      this.breadcrumbs = [];
-      this.parseRoute(this.router.routerState.snapshot.root);
+    // subscribe to the NavigationEnd event
+    this.router.events.filter(event => event instanceof NavigationEnd).subscribe(() => {
+      // set breadcrumbs
+      const root: ActivatedRoute = this.activatedRoute.root;
+      this.breadcrumbs = this.getBreadcrumbs(root);
     });
   }
 
-  parseRoute(node: ActivatedRouteSnapshot) {
-    if (node.data['breadcrumb'] && node.url.length) {
-      let urlSegments: UrlSegment[] = [];
-      node.pathFromRoot.forEach(routerState => {
-        urlSegments = urlSegments.concat(routerState.url);
-      });
+  private getBreadcrumbs(route: ActivatedRoute, url: string = '', breadcrumbs: IBreadcrumb[] = []): IBreadcrumb[] {
+    const ROUTE_DATA_BREADCRUMB = 'breadcrumb';
 
-      const url = urlSegments.map(urlSegment => {
-        return urlSegment.path;
-      }).join('/');
+    // get the child routes
+    const children: ActivatedRoute[] = route.children;
 
-      this.breadcrumbs.push({
-        name: node.data['breadcrumb'],
-        url: '/' + url
-      });
+    // return if there are no more children
+    if (children.length === 0) {
+      return breadcrumbs;
     }
-    if (node.firstChild) {
-      this.parseRoute(node.firstChild);
+
+    // iterate over each children
+    for (const child of children) {
+      // verify primary route
+      if (child.outlet !== PRIMARY_OUTLET) {
+        continue;
+      }
+
+      // verify the custom data property 'breadcrumb' is specified on the route
+      if (!child.snapshot.data.hasOwnProperty(ROUTE_DATA_BREADCRUMB)) {
+        return this.getBreadcrumbs(child, url, breadcrumbs);
+      }
+
+      // get the route's URL segment
+      const routeURL: string = child.snapshot.url.map(segment => segment.path).join('/');
+
+      // append route URL to URL
+      url += `/${routeURL}`;
+
+      // add breadcrumb
+      const breadcrumb: IBreadcrumb = {
+        label: child.snapshot.data[ROUTE_DATA_BREADCRUMB],
+        params: child.snapshot.params,
+        url: url
+      };
+      breadcrumbs.push(breadcrumb);
+
+      // recursive
+      return this.getBreadcrumbs(child, url, breadcrumbs);
     }
   }
 
