@@ -12,7 +12,7 @@ import { BranchesComponent } from './branches/branches.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { HomeComponent } from './home/home.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
-import { routing } from 'app/app.routing.module';
+import { Routing } from 'app/app.routing.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { routing } from 'app/app.routing.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    Routing
   ],
   providers: [ServerDataService],
   bootstrap: [AppComponent]
