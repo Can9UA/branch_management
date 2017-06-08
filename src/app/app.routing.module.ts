@@ -7,15 +7,24 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [{
   path: 'branches',
   component: BranchesComponent,
-  data: { breadcrumb: 'Branches' }
+  data: {
+    breadcrumb: 'Branches',
+    title: 'Branches' // page title
+  }
 }, {
   path: 'employees',
   component: EmployeesComponent,
-  data: { breadcrumb: 'Employees' }
+  data: {
+    breadcrumb: 'Employees',
+    title: 'Employees'
+  }
 }, {
   path: '',
   component: HomeComponent,
-  data: { breadcrumb: 'Home' }
+  data: {
+    breadcrumb: 'Home',
+    title: 'Home'
+  }
 }];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
