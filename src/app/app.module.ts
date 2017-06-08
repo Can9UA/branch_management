@@ -19,7 +19,6 @@ import { Routing } from 'app/app.routing.module';
     AppComponent,
     BranchComponent,
     EmployeeComponent,
-    BranchComponent,
     BranchesComponent,
     EmployeesComponent,
     BreadcrumbComponent,
