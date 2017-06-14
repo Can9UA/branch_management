@@ -1,5 +1,5 @@
 <div class="row">
-  <div *ngFor="let employee of employees; trackBy: id"
+  <div *ngFor="let employee of employees | async; trackBy: id"
        class="col-md-6 col-lg-4 mb-4">
     <employee [employee]="employee"></employee>
   </div>
